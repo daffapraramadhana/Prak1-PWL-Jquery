@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="./index.js"></script>
+  <link href="./index.css" rel="stylesheet" >
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+  <title>Tugas Praktikum 1 PWL</title>
+</head>
+<body>
+  <header>
+    <h2>Pemesanan Produk</h2>
+    <hr>
+  </header>
+  <div class="container">
+    <h1 id="nama"></h1>
+    <h3 id="list-produk"></h3>
+    <div class="card-wrap">
+      <div class="card">
+        <h2>Produk</h2>
+        <form id="form" onsubmit="return false">
+          <div class="pad-right">
+            <h3>Nama</h3><br>
+            <input type="text" id="nama-pembeli" class="full-width" onchange="nama()" required>
+          </div>
+          <h3>Pilih produk</h3>
+          <div class="clearfix cont-2">
+            <div class="left">
+              <label for="produk-1" style="padding-left: 5px, top = 5px;">Produk</label><br>
+              <select id="produk-1" required  >
+                <option value="0" hidden selected>Pilih produk</option>
+                <option value="Jet Tempur">Jet Tempur</option>
+                <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
+                <option value="Infinity Stone">Infinity Stone</option>
+                <option value="Burj Khalifa">Burj Khalifa</option>
+                <option value="Rudal Hipersonik">Rudal Hipersonik</option>
+              </select>
+              <br>
+            </div>
+            <div class="left cont-3">
+              <label for="jumlah-1" style="padding-left: 5px, top = 5px;">Jumlah</label><br>
+              <input type="number" id="jumlah-1" class="jumlah" required><br>
+            </div>
+          </div>
+          <button id="btn-tambah" class="btn-1 full-width">Tambah Produk</button><br>
+          <button id="btn-pesan" class="btn-2 full-width">Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
